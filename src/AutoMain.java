@@ -3,6 +3,14 @@ public class AutoMain {
 
 	public static void main(String[] args) {
 		
+		Auto auto1 = new Auto();
+		auto1.merkki = "BMW";
+		auto1.malli = "116i";
+		auto1.bensanMaara = 40;
+		
+		auto1.naytaTiedot();
+		auto1.kiihdyta();
+		auto1.naytaTiedot();
 
 	}
 
