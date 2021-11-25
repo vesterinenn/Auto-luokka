@@ -11,6 +11,7 @@ public class AutoMain {
 		auto1.naytaTiedot();
 		auto1.kiihdyta();
 		auto1.naytaTiedot();
+		auto1.tankkaa(5);
 
 	}
 
@@ -29,7 +30,19 @@ class Auto{
 	public void kiihdyta()
 	{
 		bensanMaara--;
-		System.out.println("Auto kiihtyy");
+		if(bensanMaara > 0)
+		{
+			System.out.println("Auto kiihtyy");
+		}
+		else {}
+	}
+	
+	public void tankkaa(int t)
+	{
+		System.out.println("Tankissa bensaa: " + bensanMaara);
+		System.out.println("Tankkaus: " + t);
+		bensanMaara = bensanMaara + t;
+		System.out.println("Tankissa bensaa tankkauksen jälkeen: " + bensanMaara);
 	}
 	
 	public void naytaTiedot()
