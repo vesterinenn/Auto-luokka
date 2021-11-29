@@ -3,15 +3,15 @@ public class AutoMain {
 
 	public static void main(String[] args) {
 		
-		Auto auto1 = new Auto();
-		auto1.merkki = "BMW";
-		auto1.malli = "116i";
-		auto1.bensanMaara = 40;
+//		Auto auto1 = new Auto();
+//		auto1.merkki = "BMW";
+//		auto1.malli = "116i";
+//		auto1.bensanMaara = 40;
 		
-		auto1.naytaTiedot();
-		auto1.kiihdyta();
-		auto1.naytaTiedot();
-		auto1.tankkaa(5);
+//		auto1.naytaTiedot();
+//		auto1.kiihdyta();
+//		auto1.naytaTiedot();
+//		auto1.tankkaa(5);
 
 	}
 
@@ -50,6 +50,24 @@ class Auto{
 		System.out.println("Merkki: " + merkki);
 		System.out.println("Malli: " + malli);
 		System.out.println("Bensan m‰‰r‰: " + bensanMaara);
+	}
+	
+	//Oletuskonstruktori
+	public Auto()
+	{
+		merkki = "";
+		malli = "";
+		bensanMaara = 0;
+		naytaTiedot();
+	}
+	
+	//Parametrinen konstruktori
+	public Auto(String merkki, String malli, int bensanMaara)
+	{
+		this.merkki = merkki;
+		this.malli = malli;;
+		this.bensanMaara = bensanMaara;
+		naytaTiedot();
 	}
 	
 } //Auto-luokka loppuu
