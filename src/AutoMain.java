@@ -12,6 +12,12 @@ public class AutoMain {
 //		auto1.kiihdyta();
 //		auto1.naytaTiedot();
 //		auto1.tankkaa(5);
+		
+		Auto auto2 = new Auto("Porsche", "Panamera", 10);
+		auto2.kiihdyta();
+		auto2.jarruta();
+		auto2.naytaTiedot();
+		auto2.tankkaa(40);
 
 	}
 
